@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  
+     <style>
+    
+    textarea {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none; 
+    }
+	 ul {
+      list-style-type: none;
+      padding: 0;
+	  font-size: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    li:hover {
+      background-color: #e0e0e0;
+    }
+	
+	button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+	
+  </style>
+ 
+ 
+ 
+ </head>
+<body style="background-color:#D2B9D3">
+  <div id="app" >
+    <h1><img src="\notes.png" width="60px" ><font size="7" display="flex" font-size="35px" font-weight="600" color="White">Notes</h1>
+    
+	<div>
+      <textarea id="noteInput" placeholder="Add Notes ........." style="width:40%"></textarea>
+      <button onclick="addNote()">Add Note</button>
+    </div>
+	<div><h1><img src="\edit.png" width="60px" ><font size="7" display="flex" font-size="35px" font-weight="600" color="black">My Notes</h1></div>
+   	<ul id="noteList" style="color:black" ></ul>
+    
+	</div>
+  <script src ="\Note.js"></script>
+</body>
+</html>
